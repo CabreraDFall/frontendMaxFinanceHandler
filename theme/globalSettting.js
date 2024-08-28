@@ -1,8 +1,11 @@
 export const colorTheme = {
   grayBase: "#676767",
+  grayAlternative: "#9D9D9D",
   primaryPurple: "#3E009F",
   whiteBase: "#FCFCFC",
+  blackBase: "#090A0B",
   sucess: "#15B097",
+  danger: "#FF2D55",
 };
 
 export const sizeTheme = {

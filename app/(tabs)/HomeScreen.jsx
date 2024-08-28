@@ -1,9 +1,11 @@
-import { StatusBar, StyleSheet, Text, View } from "react-native";
+import { StyleSheet, Text, View } from "react-native";
 import React from "react";
 import { SafeAreaView } from "react-native-safe-area-context";
-import Header from "../components/Header";
+import Header from "../../components/Header";
 import { LinearGradient } from "expo-linear-gradient";
-import CardAccount from "../components/CardAccount";
+import CardAccount from "../../components/CardAccount";
+import Historial from "../../components/Historial";
+import { StatusBar } from "expo-status-bar";
 
 const HomeScreen = () => {
   return (
@@ -16,10 +18,17 @@ const HomeScreen = () => {
         start={{ x: 0, y: 0.5 }}
         end={{ x: 1, y: 0 }}
       >
-        <StatusBar barStyle="light-content" />
-        <SafeAreaView style={styles.container}>
-          <Header />
-          <CardAccount />
+        <StatusBar style="light" />
+        <SafeAreaView>
+          <View
+            style={{ paddingHorizontal: 25, paddingTop: 25, paddingBottom: 5 }}
+          >
+            <Header />
+            <CardAccount />
+          </View>
+          <View>
+            <Historial />
+          </View>
         </SafeAreaView>
       </LinearGradient>
     </>
@@ -29,12 +38,7 @@ const HomeScreen = () => {
 export default HomeScreen;
 
 const styles = StyleSheet.create({
-  container: {
-    padding: 25,
-  },
-  gradient: {
-    flex: 1,
-  },
+  gradient: {},
   text: {
     fontSize: 20,
     color: "#fff",

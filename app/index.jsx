@@ -1,5 +1,5 @@
 import { Stack, useRouter } from "expo-router";
-import React from "react";
+import React, { useEffect } from "react";
 import {
   View,
   Text,
@@ -63,7 +63,7 @@ const LoginScreen = () => {
           </View>
           <TouchableOpacity
             style={styles.button}
-            onPress={() => router.push("/HomeScreen")}
+            onPress={() => router.push("HomeScreen")}
           >
             <Text style={styles.buttonText}>Iniciar sesión</Text>
           </TouchableOpacity>

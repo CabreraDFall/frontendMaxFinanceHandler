@@ -47,7 +47,7 @@ export default Header;
 const styles = StyleSheet.create({
   fullHeader: {
     flexDirection: "row",
-    paddingBottom: 24,
+    paddingBottom: 10,
     justifyContent: "space-between",
     alignItems: "center",
   },

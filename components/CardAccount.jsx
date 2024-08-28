@@ -93,11 +93,11 @@ const CardAccount = () => {
             </View>
           </View>
         </LinearGradient>
+        <Image
+          style={styles.imagebg}
+          source={require("../assets/userCardUI.png")}
+        />
       </LinearGradient>
-      <Image
-        style={styles.imagebg}
-        source={require("../assets/userCardUI.png")}
-      />
     </>
   );
 };
@@ -107,7 +107,7 @@ export default CardAccount;
 const styles = StyleSheet.create({
   imagebg: {
     position: "absolute",
-    bottom: 0,
-    right: 0,
+    bottom: -40,
+    right: -60,
   },
 });

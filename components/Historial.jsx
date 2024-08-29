@@ -5,6 +5,7 @@ import { colorTheme, sizeTheme } from "../theme/globalSettting";
 import { LinearGradient } from "expo-linear-gradient";
 import MaterialIcons from "@expo/vector-icons/MaterialIcons";
 import Entypo from "@expo/vector-icons/Entypo";
+import HeaderFilter from "../utils/HeaderFilter";
 
 const { height } = Dimensions.get("window");
 const data = [
@@ -193,16 +194,8 @@ const Historial = () => {
         <CategoryTag />
       </View>
       <View style={{ paddingHorizontal: 30, paddingVertical: 15 }}>
-        <Text
-          style={{
-            fontSize: sizeTheme.h3,
-            fontWeight: "bold",
-            color: colorTheme.grayAlternative,
-          }}
-        >
-          Historial
-        </Text>
-        <View style={{ paddingBottom: 20, height: height * 0.5 }}>
+        <HeaderFilter filter={"Detalles"}></HeaderFilter>
+        <View style={{ paddingBottom: 20, height: height * 0.6 }}>
           <Transaction data={TransactionData} />
         </View>
       </View>

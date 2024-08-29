@@ -6,6 +6,8 @@ export const colorTheme = {
   blackBase: "#090A0B",
   sucess: "#15B097",
   danger: "#FF2D55",
+  chartGreen: "#00C7BE",
+  chartRed: "#FF2D55",
 };
 
 export const sizeTheme = {
